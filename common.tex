@@ -1,0 +1,22 @@
+%\patchcmd{\appendices}{\quad}{: }{}{}
+
+%\renewcommand*\listfigurename{\vskip-2em}
+%\renewcommand*\listtablename{\vskip-2em}
+%\renewcommand*\lstlistlistingname{\vskip-2em}
+%\renewcommand*\refname{\vskip-2em}
+%\renewcommand*\indexname{\section{Index}}
+
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+
+\newcommand{\subsubsubsection}[1]{\paragraph{#1} $\;$\newline}
+\newcommand{\subsubsubsubsection}[1]{\subparagraph{#1} $\;$\newline}
+
+\newcommand{\key}[1]
+	{\raisebox{0.15em}{\colorbox{darkgray}{\tt\footnotesize\textcolor{white}{\strut #1}}}}
+
+\newcommand{\mytilde}{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}
